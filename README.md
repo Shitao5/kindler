@@ -1,0 +1,66 @@
+
+# kindler
+
+## 中文
+
+用于整理 kindle 杂乱无章的 `My Clippings.txt`
+文件，最终按书名输出每本书的笔记。
+
+### 用法
+
+克隆该仓库:
+
+``` bash
+git clone https://github.com/Shitao5/kindler
+```
+
+将 kindle 设备的 `documents` 文件夹复制 `My Clippings.txt`
+到这个R项目中，运行 `script.R`：
+
+``` r
+source("You/path/to/kindler/script.R")
+```
+
+### 注意事项
+
+- 使用笔记的位置判定笔记是否重复，该方法不一定精准，可能仍会有重复笔记的情况存在。
+- 文件名（`script.R`中的 `title`
+  变量）中应避免`.`等特殊字符存在。如存在，可以参照第34-45行的方法更改。
+
+### 待办
+
+- [ ] 将其制作为 shiny 应用
+
+## 英文
+
+The goal of **kinder** is to organize kindle’s cluttered
+`My Clippings.txt` file, eventually outputting notes for each book by
+title.
+
+# Usage
+
+Clone this repo:
+
+``` bash
+git clone https://github.com/Shitao5/kindler
+```
+
+Copy `My Clippings.txt` from the `documents` folder of your kindle
+device to this R project.
+
+``` r
+source("You/path/to/kindler/script.R")
+```
+
+# note
+
+- Use the location of the note to determine if the note is a duplicate,
+  this method may not be accurate and there may still be duplicate
+  notes.
+- The file name (the `title` variable in `script.R`) should avoid `.`
+  and other special characters. If they do exist, you can change them as
+  described in lines 34-45.
+
+# todo
+
+- [ ] Make a shiny app
