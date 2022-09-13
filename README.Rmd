@@ -38,7 +38,7 @@ source("You/path/to/kindler/script.R")
 
 - [ ] 将其制作为 shiny 应用
 
-## 英文
+## English
 
 The goal of **kinder** is to organize kindle's cluttered `My Clippings.txt` file, eventually outputting notes for each book by title.
 
