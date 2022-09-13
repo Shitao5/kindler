@@ -25,11 +25,12 @@ source("You/path/to/kindler/script.R")
 
 - 使用笔记的位置判定笔记是否重复，该方法不一定精准，可能仍会有重复笔记的情况存在。
 - 文件名（`script.R`中的 `title`
-  变量）中应避免`.`等特殊字符存在。如存在，可以参照第34-45行的方法更改。
+  变量）中应避免`.`等特殊字符存在。如存在，可以参照第36-47行的方法更改。
 
 ### 待办
 
 - [ ] 将其制作为 shiny 应用
+- [ ] 将其制作为 R 包
 
 ## English
 
@@ -59,8 +60,9 @@ source("You/path/to/kindler/script.R")
   notes.
 - The file name (the `title` variable in `script.R`) should avoid `.`
   and other special characters. If they do exist, you can change them as
-  described in lines 34-45.
+  described in lines 36-47.
 
 ### Todo
 
 - [ ] Make a shiny app
+- [ ] Write a R package

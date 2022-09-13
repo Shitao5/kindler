@@ -1,9 +1,11 @@
 # 读取 My Clippings.txt
 text <- read.csv("My Clippings.txt", header = FALSE)
 
-library(tidyverse)
-library(lubridate)
-library(cli)
+# libary packages
+# install.packages(c("tidyverse", "lubridate", "cli"))
+library(tidyverse) # 数据处理
+library(lubridate) # 时间数据处理
+library(cli)       # 美化控制台输出
 
 # 第一行加上 kindle 默认的分行符，方便后续处理
 text <- data.frame(V1 = "==========") |> rbind(text)
@@ -83,6 +85,10 @@ dfs <- result %>%
   mutate(print = str_c(text, " （", datetime, "）")) %>% 
   select(title, print) %>% 
   group_split(title, .keep = FALSE)
+
+# dfs <- result %>% 
+#   select(title, print = text) %>% 
+#   group_split(title, .keep = FALSE)
 
 # 构建输出路径
 titles <- result %>% 
