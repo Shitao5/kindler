@@ -37,7 +37,7 @@ The goal of **kinder** is to organize kindle’s cluttered
 `My Clippings.txt` file, eventually outputting notes for each book by
 title.
 
-# Usage
+### Usage
 
 Clone this repo:
 
@@ -52,7 +52,7 @@ device to this R project.
 source("You/path/to/kindler/script.R")
 ```
 
-# note
+### Notes
 
 - Use the location of the note to determine if the note is a duplicate,
   this method may not be accurate and there may still be duplicate
@@ -61,6 +61,6 @@ source("You/path/to/kindler/script.R")
   and other special characters. If they do exist, you can change them as
   described in lines 34-45.
 
-# todo
+### Todo
 
 - [ ] Make a shiny app
